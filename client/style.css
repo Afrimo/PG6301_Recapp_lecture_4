@@ -1,0 +1,28 @@
+body {
+     margin: 0;
+}
+
+.application {
+     background-color: palevioletred;
+     height: 100vh;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
+}
+
+header {
+     background-color: aquamarine;
+}
+
+footer {
+     background-color: aquamarine;
+}
+
+footer form {
+     display: flex;
+     flex-direction: row;
+     align-items: stretch;
+}
+
+footer input {
+     flex: 1;
+}
