@@ -11,7 +11,9 @@ const sockets = [];
 
 wsServer.on("connect", (socket) => {
   sockets.push(socket);
-  socket.send(JSON.stringify({ author: "Server", message: "Hello there" }));
+  setTimeout(() => {
+    socket.send(JSON.stringify({ author: "Server", message: "Hello there" }));
+  }, 1000);
   socket.on("message", (data) => {
     const { author, message } = JSON.parse(data);
     for (const recipient of sockets) {
