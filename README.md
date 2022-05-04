@@ -7,6 +7,7 @@
 * [FAIL] Deploy to Heroku
 * [x] Register username
 * [x] View for chat log and new chat message
+* [x] Chat messages updates chat log locally
 * [ ] Connect client to websocket on server
 * [ ] Send messages to the server
 * [ ] Receive messages from server -> update chat log
