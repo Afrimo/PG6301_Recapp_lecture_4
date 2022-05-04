@@ -7,7 +7,7 @@ app.use(express.static("../client/dist"));
 
 const wsServer = new WebSocketServer({ noServer: true });
 wsServer.on("connect", (socket) => {
-  socket.send("Hello there");
+  socket.send(JSON.stringify({ author: "Server", message: "Hello there" }));
 });
 
 const server = app.listen(process.env.PORT || 3000, () => {
